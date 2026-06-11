@@ -21,7 +21,7 @@ A model-driven app is the right tool for this — it's built directly on your Da
 
 ## Task 1: Create the model-driven app
 
-1. Open [Power Apps](https://make.powerapps.com){:target="_blank"} at `https://make.powerapps.com` and sign in with your Microsoft account.
+1. Open [Power Apps](https://make.powerapps.com) at `https://make.powerapps.com` and sign in with your Microsoft account.
 
 1. Confirm you are in your **Dev One** environment.
 
@@ -93,40 +93,11 @@ Forms control what fields are shown when a manager opens a specific record.
 
 1. Close the form designer tab and return to the app designer.
 
-## Task 5: Enable Copilot and AI assistance
-
-> **⚠️ NEEDS RETESTING**: This task needs to be verified in a clean training environment before the course runs. In testing, Copilot chat appeared to be available in the published app without explicitly enabling it — which may mean it's on by default. If so, this task should be rewritten to focus on **using** Copilot chat rather than configuring it. Skip or present this task as a demo for now.
-
-Power Apps model-driven apps include built-in AI features you can enable with just a few settings, no custom development required.
-
-1. In the app designer for **Contoso Service Management**, select **Settings** (the gear icon in the top-right corner of the designer).
-
-1. In the **Settings** panel, select the **Features** section.
-
-1. Find **Copilot** and select **On** from the dropdown menu. This adds a Copilot chat panel to the app that lets users ask natural language questions about their data, such as filtering records or summarizing trends, without writing any queries.
-
-    > **Note**: There are two Copilot features available. **Copilot** (Copilot chat) works with a standard Power Apps premium license and is what you're enabling here. **Enable M365 Copilot in model-driven apps** is a separate, more powerful option that requires both a Power Apps premium license and a Microsoft 365 Copilot license — your training environment likely won't have this.
-
-    > **Important**: The app-level setting enables the feature for your app, but Copilot chat also requires an **environment-level** setting to be turned on by an administrator. If the Copilot icon doesn't appear in the running app, the environment setting may not be enabled. Ask your instructor — they can enable it in the Power Platform admin center under **Environments** > **Settings** > **Features** > **Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps**.
-
-1. Find **Form fill assist toolbar** and select **On** from the dropdown menu. This AI feature suggests field values as managers fill in records, helping them complete forms faster and more consistently.
-
-1. Select **Save**, then select **Publish**. (Wait for your publish to complete.)
-
-1. Select **Play** to open the published app in a new tab. Look for the **Copilot** icon (sparkle icon) in the top-right corner of the app.
-
-1. Select the Copilot icon to open the panel. Try asking:
-    - `Show me all Critical Work Orders`
-    - `How many requests are currently In Progress?`
-    - `Which requests are assigned to no technician?`
-
-    > **Note**: The Copilot panel is powered by the data in your Dataverse tables and the views configured in your app. It works best when your views and column names are clear and descriptive. Results depend on the data in your environment.
-
-## Task 6: Create a custom view for high-priority requests
+## Task 5: Create a custom view for high-priority requests
 
 Views let you define exactly which records appear and which columns are shown when a manager opens the app. You'll create a filtered view that surfaces only the most urgent Work Orders, giving managers a focused queue without having to manually filter every time.
 
-1. Open a new browser tab and navigate to [Power Apps](https://make.powerapps.com){:target="_blank"} at `https://make.powerapps.com`. Keep the app designer tab open so you can return to it later.
+1. Open a new browser tab and navigate to [Power Apps](https://make.powerapps.com) at `https://make.powerapps.com`. Keep the app designer tab open so you can return to it later.
 
 1. In the left navigation, select **Solutions** and open the **Contoso Field Services** solution.
 
@@ -165,7 +136,7 @@ Views let you define exactly which records appear and which columns are shown wh
 
 1. Select **Save**.
 
-## Task 7: Create a chart for the Work Order table
+## Task 6: Create a chart for the Work Order table
 
 Charts give managers a visual snapshot of data without any code. You'll create a pie chart that shows how Work Orders are distributed across priority levels — a quick health check at a glance. Charts are defined at the table level and can then be embedded in dashboards.
 
@@ -189,7 +160,7 @@ Charts give managers a visual snapshot of data without any code. You'll create a
 
 1. Back in the charts page of the Solution, select **Done.**
 
-## Task 8: Add a dashboard page
+## Task 7: Add a dashboard page
 
 Dashboards let managers see their most important data at a glance in a single page. You'll build a dashboard that combines the **High Priority Work Orders** view and the **Requests by Priority** chart side by side, then add it to the app as a page.
 
@@ -228,7 +199,7 @@ Dashboards let managers see their most important data at a glance in a single pa
 
 1. Select **Save**.
 
-## Task 9: Test the app
+## Task 8: Test the app
 
 1. Select **Publish** to ensure all changes are published.
 
