@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Create a Contoso customer portal with Power Pages'
     description: 'Build an external-facing Power Pages site where Contoso customers can submit Work Orders and check their status'
@@ -29,7 +29,7 @@ Make sure you are in your **Power Pages** tab (`make.powerpages.microsoft.com`) 
 
 Power Pages includes a Copilot-powered site creation experience. Instead of starting from a blank template and building everything manually, you describe what you need in plain language and Copilot generates the site structure for you.
 
-1. Open [Power Pages](https://make.powerpages.microsoft.com){:target="_blank"} at `https://make.powerpages.microsoft.com` and sign in with your Microsoft account. (If prompted, select **Get started** and select **Other** for Industry.)
+1. Open [Power Pages](https://make.powerpages.microsoft.com) at `https://make.powerpages.microsoft.com` and sign in with your Microsoft account. (If prompted, select **Get started** and select **Other** for Industry.)
 
 1. Confirm you are in your **Dev One** environment using the environment picker in the top right.
 
@@ -97,7 +97,7 @@ Make sure you are in your **Power Apps** tab (`make.powerapps.com`) before start
 
 Before you can add a form to the portal, you need to create a dedicated form on the Work Order table that only exposes the fields a customer should see. Forms are defined at the table level and reused across apps and portals. It's the same pattern you used in Lab 4 for the model-driven app, but for a different audience.
 
-1. Open a new browser tab and navigate to [Power Apps](https://make.powerapps.com){:target="_blank"} at `https://make.powerapps.com`. Keep the Power Pages tab open.
+1. Open a new browser tab and navigate to [Power Apps](https://make.powerapps.com) at `https://make.powerapps.com`. Keep the Power Pages tab open.
 
 1. In the left navigation, select **Solutions** and open **Contoso Field Services**.
 
@@ -181,7 +181,7 @@ Make sure you are in your **Power Apps** tab before starting this task.
 
 Before testing the portal, you'll add two new columns to the Work Order table: an **autonumber** column that generates a unique reference number for every submission, and a **formula column** that calculates the estimated resolution date based on the 48-hour SLA.
 
-1. In [Power Apps](https://make.powerapps.com){:target="_blank"}, navigate to **Solutions** > **Contoso Field Services** > **Objects** > **Tables** > **Work Order** > **Columns**.
+1. In [Power Apps](https://make.powerapps.com), navigate to **Solutions** > **Contoso Field Services** > **Objects** > **Tables** > **Work Order** > **Columns**.
 
 1. Select **+ New column** and configure the autonumber column:
     - **Display name**: `Work Order Number`
