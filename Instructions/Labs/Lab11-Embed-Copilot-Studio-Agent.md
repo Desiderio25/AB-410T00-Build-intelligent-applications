@@ -242,13 +242,12 @@ The Plan Comparison agent can reason about table schemas and data, but a solutio
     - **One thing that diverged** — for example, the plan used a separate **Field Technician** table while you used a lookup field; or the plan used the **Account** entity while you used a plain text customer name field
     - **One thing you added** — something meaningful you built that wasn't in the plan at all (for example: the escalation topic, security roles, the model-driven app dashboard, or the Copilot Studio agent itself)
 
-1. Be prepared to share at least one of your findings with the class.
-
-    > **Discussion prompts for instructors**:
-    > - *"Did anyone's plan accurately predict the security role structure?"*
-    > - *"What did the plan get right about the data model?"*
-    > - *"What did you build in these labs that surprised you — things the plan never anticipated?"*
-    > - *"If you were starting a real field service project tomorrow, how would you use Plan Designer differently?"*
+1. Be prepared to share at least one of your findings with the class. Here are a few discussion points to get you started:
+   - *"Did anyone's plan accurately predict the security role structure?"*
+   - *"What did the plan get right about the data model?"*
+   - *"What did you build in these labs that surprised you — things the plan never anticipated?"*
+   - *"If you were starting a real field service project tomorrow, how would you use Plan Designer differently?"*
+   - *"What seems easier: creating the model from scratch like we did, or editing components that the Plan Designer created?"*
 
     > **Key takeaway**: AI-assisted planning is a powerful starting point, not a finished blueprint. The gap between what a plan generates and what a real solution requires is exactly where human judgment, domain expertise, and iterative testing add value. You've experienced that gap firsthand across these labs.
 
