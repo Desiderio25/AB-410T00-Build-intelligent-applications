@@ -19,9 +19,10 @@ Contoso customers currently report equipment failures by phone. Agents then manu
 
 Contoso wants an external portal where customers can submit requests themselves and track progress online. You'll build this portal using Power Pages connected to the Work Order table from Lab 3.
 
-> **A note on AI-generated output**: Because you'll use Copilot to generate this site, your portal will look different from your classmates' — and that's intentional. Copilot produces different layouts, color schemes, and page structures each time. Treat this as an opportunity to apply your own user experience design judgment: evaluate what Copilot gives you, keep what works, simplify what doesn't, and make design choices that reflect what a real Contoso customer would expect to see.
+Before we get started, a quick **note on AI-generated output**: Because you'll use Copilot to generate this site, your portal may look different from your classmates', and that's intentional. Copilot produces different layouts, color schemes, and page structures each time. Treat this as an opportunity to apply your own user experience design judgment: evaluate what Copilot gives you, keep what works, simplify what doesn't, and make design choices that reflect what a real Contoso customer would expect to see.
 
-> **Working with two tabs**: This lab moves back and forth between **Power Apps** (`make.powerapps.com`) and **Power Pages** (`make.powerpages.microsoft.com`). Keep both open in separate browser tabs throughout. At the start of each task, make sure you're in the right tab before you begin.
+### Working with two tabs
+This lab moves back and forth between **Power Apps** (`make.powerapps.com`) and **Power Pages** (`make.powerpages.microsoft.com`). Keep both open in separate browser tabs throughout. At the start of each task, make sure you're in the right tab before you begin.
 
 ## Task 1: Create a site with Copilot
 
