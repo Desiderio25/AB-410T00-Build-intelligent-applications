@@ -21,15 +21,17 @@ You'll build this app connected to the Work Order table you created in Lab 3, wi
 
 ## Task 1: Create the canvas app
 
-1. Open [Power Apps](https://make.powerapps.com){:target="_blank"} at `https://make.powerapps.com` and sign in with your Microsoft account.
+1. Open [**Power Apps**](https://make.powerapps.com) at `https://make.powerapps.com` and sign in with your Microsoft account.
 
 1. Confirm you are in your **Dev One** environment.
 
 1. In the left navigation, select **+ Create**.
 
-1. Select **Create from blank** and select **Phone** as the size.
+1. Select **Create from blank** and select **Phone size**.
 
-1. Select the **gear** icon in the bottom left corner. Configure the **App name** as `Contoso Technician App`.
+1. Skip any welcome messages that appear.
+
+1. Select the **gear** icon in the bottom left corner. Configure the **App name** as `Contoso Technician App`, then select **Close**.
 
 ## Task 2: Connect to the Work Order table
 
