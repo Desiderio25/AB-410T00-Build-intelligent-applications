@@ -20,15 +20,15 @@ You'll create a cloud flow that runs automatically whenever a new Work Order rec
 
 ## Task 1: Create the automated cloud flow
 
-1. Open [Power Automate](https://make.powerautomate.com) at `https://make.powerautomate.com` and sign in with your Microsoft account.
+1. Open [**Power Automate**](https://make.powerautomate.com) at `https://make.powerautomate.com` and sign in with your Microsoft account.
 
-1. Confirm you are in your **Dev One** using the environment picker.
+1. Confirm you are in your **Dev One** environment using the environment picker.
 
 1. In the left navigation, select **+ Create**.
 
 1. Select **Automated cloud flow**.
 
-1. In the **Build an automated cloud flow** dialog:
+1. In the **Build an automated cloud flow** dialog, configure the following:
     - **Flow name**: `Notify Technician on New Work Order`
     - **Choose your flow's trigger**: Search for `When a row is added` and select **When a row is added, modified or deleted** (Microsoft Dataverse)
 
@@ -70,7 +70,8 @@ Not all new Work Orders will have a technician assigned yet — some will be una
     - **Table name**: Users
     - **Row ID**: Type `/` and select **Insert dynamic content**. Search for and select **Assigned Technician (Value)**.
 
-    > **Note**: This action retrieves the full User record for the assigned technician so you can access their email address in the next step.
+   > [!NOTE]
+   > This action retrieves the full User record for the assigned technician so you can access their email address in the next step.
 
 1. Select the plus sign below the **Get a row by ID** action to add another action.
 
@@ -110,9 +111,9 @@ Not all new Work Orders will have a technician assigned yet — some will be una
 
 1. Select **Manually** and then **Test**.
 
-1. Open a new browser tab and go to [Power Apps](https://make.powerapps.com) at `https://make.powerapps.com`. Ensure you are in your **Dev One** environment.
+1. Open a new browser tab and go to [**Power Apps**](https://make.powerapps.com) at `https://make.powerapps.com`. Ensure you are in your **Dev One** environment.
 
-1. Open the **Contoso Service Management** model-driven app. Select **Work orders** to navigate to the Work Orders page and select **+New** to create a new Work Order using the form:
+1. Open the **Contoso Service Management** model-driven app. Select **Work orders** to navigate to the Work Orders page and select **+ New** to create a new Work Order using the form:
     - **Customer Name**: `Fabrikam Industries`
     - **Issue Description**: `Cooling system failure in Building A`
     - **Priority**: `High`
@@ -121,13 +122,15 @@ Not all new Work Orders will have a technician assigned yet — some will be una
 
 1. Select **Save** to save the record.
 
-    > **Note**: Create the test record through the model-driven app rather than directly in the table editor. The app form ensures the lookup field value is properly committed when the record is saved, so the flow trigger receives a valid Assigned Technician ID. Creating a record directly in the table editor can result in the lookup value not being passed to the trigger correctly.
+   > [!NOTE]
+   >  Create the test record through the model-driven app rather than directly in the table editor. The app form ensures the lookup field value is properly committed when the record is saved, so the flow trigger receives a valid Assigned Technician ID. Creating a record directly in the table editor can result in the lookup value not being passed to the trigger correctly.
 
 1. Return to Power Automate and check the test results. The flow should have triggered and show a successful run.
 
-1. Open a new browser tab and go to [Outlook](https://outlook.office.com) at `https://outlook.office.com`. Sign in with your MOD Administrator email address provided by your Authorized Lab Host and check your inbox for the notification email.
+1. Open a new browser tab and go to [**Outlook**](https://outlook.office.com) at `https://outlook.office.com`. Sign in with your MOD Administrator email address provided by your Authorized Lab Host and check your inbox for the notification email.
 
-    > **Note**: If the flow run shows an error, select the failed step to see the error details. Common issues include connection problems (you may need to sign in to the Outlook connector) or dynamic content mapping errors.
+   > [!NOTE]
+   > If the flow run shows an error, select the failed step to see the error details. Common issues include connection problems (you may need to sign in to the Outlook connector) or dynamic content mapping errors.
 
 ## Task 6: Review the flow run history
 
@@ -137,4 +140,5 @@ Not all new Work Orders will have a technician assigned yet — some will be una
 
 1. Select the run to see a detailed view of each step, the inputs, and the outputs.
 
-    > **Note**: The run history is your primary debugging tool in Power Automate. Each step shows exactly what data it received and what it returned, making it straightforward to identify where a flow went wrong.
+   > [!NOTE]
+   > The run history is your primary debugging tool in Power Automate. Each step shows exactly what data it received and what it returned, making it straightforward to identify where a flow went wrong.
