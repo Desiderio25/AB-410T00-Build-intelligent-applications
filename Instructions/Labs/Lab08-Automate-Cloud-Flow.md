@@ -41,7 +41,15 @@ You'll create a cloud flow that runs automatically whenever a new Work Order rec
     - **Table name**: Work Orders
     - **Scope**: Organization
 
-1. Collapse the trigger step and select **+** to add the next action underneath it.
+1. Below the **When a row is added, modified or deleted** trigger, select **+** to add an action.
+
+1. Search for `Get a row by ID` and select **Get a row by ID** under **Microsoft Dataverse**.
+
+1. In the **Get a row by ID** step, configure the following settings:
+    -   **Table name:** Work Orders
+    -   **Row ID:** In **Dynamic content**, search for and select **Work Order**.
+
+1. Select **+** to add the next action underneath it.
 
 ## Task 3: Add a condition to check for an assigned technician
 
@@ -101,7 +109,7 @@ Not all new Work Orders will have a technician assigned yet — some will be una
         Contoso Field Services
         ```
 
-        For each bracketed placeholder, delete the bracket text, then type `/` and select **Insert dynamic content**. Search for and select the matching field from the Dataverse trigger.
+        For each bracketed placeholder, delete the bracket text, then type `/` and select **Insert dynamic content**. Search for and select the matching field from the Dataverse trigger. For **Priority**, add the following expression: `body('Get_a_row_by_ID')?['contoso_priority@OData.Community.Display.V1.FormattedValue']` to display the priority label instead of the numeric value.
 
 1. Select **Save** in the top toolbar.
 
