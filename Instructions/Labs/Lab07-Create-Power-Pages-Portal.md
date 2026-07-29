@@ -13,6 +13,23 @@ In this exercise, you build an external-facing portal using Microsoft Power Page
 
 This exercise should take approximately **60** minutes to complete.
 
+> [!WARNING]
+> Some portal pages (including **Contact Us** and **Submit a Request**) may display errors after completing this step. This is caused by an erroneous `{% entityform %}` tag in the page HTML that Copilot occasionally generates. If you see errors, follow these steps to fix it:
+>
+> 1. In Power Pages Studio, select the affected page in the **Pages** panel.
+> 1. Select the section where the error appears to highlight it.
+> 1. Select the **Edit code** icon (`</>`) that appears in the section toolbar. This opens the code editor for that section.
+> 1. Use **Ctrl+F** to search for `{% entityform %}` in the code.
+> 1. Replace it with the following:
+>
+>    ```
+>    {%- entityform name: "Work Order Submission" -%}
+>    ```
+>
+> 1. Select **Save** and then **Sync** to apply the change.
+>
+> Repeat for any other pages showing the same error. This issue can affect both **Task 4** and **Task 8**.
+
 ## Scenario
 
 Contoso customers currently report equipment failures by phone. Agents then manually create Work Orders in the system. This process is slow and error-prone. Customers don't get confirmation numbers, and they have to call back to check status.
