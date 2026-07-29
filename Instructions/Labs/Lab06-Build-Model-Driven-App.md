@@ -1,4 +1,4 @@
----
+﻿---
 lab:
     title: 'Build a model-driven app for Contoso service managers'
     description: 'Create a model-driven app in Microsoft Power Apps that service managers use to track, prioritize, and manage all open Work Orders'
@@ -17,7 +17,7 @@ This exercise should take approximately **45** minutes to complete.
 
 Contoso service managers need a full-featured desktop interface to manage the incoming queue of Work Orders. Unlike field technicians (who only need to see their own assigned jobs), managers need to see all requests across all customers, filter by priority, reassign technicians, and track resolution progress.
 
-A model-driven app is the right tool for this � it's built directly on your Dataverse data model, and it automatically inherits the forms and views you've already configured.
+A model-driven app is the right tool for this — it's built directly on your Dataverse data model, and it automatically inherits the forms and views you've already configured.
 
 ## Task 1: Create the model-driven app
 
@@ -49,17 +49,17 @@ A model-driven app is the right tool for this � it's built directly on your Da
 
 1. Confirm that **Work Orders** now appears as a page in the left navigation of the app designer. You should also see the three sample Work Orders you created in Lab 3 (Adatum Corporation, Tailwind Traders, Fabrikam Inc) displayed in the view in the center of the app designer.
 
-1. In the left **Pages** pane, select **New Group** � the group that Work Orders is nested under. In the right properties pane, change the **Title** to `Service Management`, then select **Save**.
+1. In the left **Pages** pane, select **New Group** — the group that Work Orders is nested under. In the right properties pane, change the **Title** to `Service Management`, then select **Save**.
 
 ## Task 3: Configure views for the app
 
-Views control which records are shown and which columns are displayed in the list. By default, all views for the table are included in the app � you'll trim this down to the two most useful ones for service managers.
+Views control which records are shown and which columns are displayed in the list. By default, all views for the table are included in the app — you'll trim this down to the two most useful ones for service managers.
 
 1. In the left **Pages** pane of the app designer, select **Work Orders view** (not the form).
 
 1. On the right properties pane (if you don't see it, you might need to expand it), select the **Views** tab. You'll see views listed under **In this app**.
 
-1. Under **In this app**, you'll see two default views: **Active Work Orders** and **Inactive Work Orders**. Select **...** next to **Inactive Work Orders** and select **Remove** � service managers only need to see active records. You should see **Inactive Work Orders** under **Not in this app** after the change.
+1. Under **In this app**, you'll see two default views: **Active Work Orders** and **Inactive Work Orders**. Select **...** next to **Inactive Work Orders** and select **Remove** — service managers only need to see active records. You should see **Inactive Work Orders** under **Not in this app** after the change.
 
 1. Select **Save**.
 
@@ -138,7 +138,7 @@ Views let you define exactly which records appear and which columns are shown wh
 
 ## Task 6: Create a chart for the Work Order table
 
-Charts give managers a visual snapshot of data without any code. You'll create a pie chart that shows how Work Orders are distributed across priority levels � a quick health check at a glance. Charts are defined at the table level and can then be embedded in dashboards.
+Charts give managers a visual snapshot of data without any code. You'll create a pie chart that shows how Work Orders are distributed across priority levels — a quick health check at a glance. Charts are defined at the table level and can then be embedded in dashboards.
 
 1. Return to the **Contoso Field Services** solution tab. Select **Objects**, expand **Tables**, and expand the **Work Order** table.
 
@@ -187,7 +187,7 @@ Dashboards let managers see their most important data at a glance in a single pa
 
 1. Select **Save**, then select **Close** to return to the solution.
 
-1. On the solution command bar, select **Publish all customizations** and wait for it to complete. This ensures the dashboard is available to add to the app � customizations created in the classic designer aren't visible in the modern app designer until published.
+1. On the solution command bar, select **Publish all customizations** and wait for it to complete. This ensures the dashboard is available to add to the app — customizations created in the classic designer aren't visible in the modern app designer until published.
 
 1. Return to the app designer tab. Select **+ Add page**.
 

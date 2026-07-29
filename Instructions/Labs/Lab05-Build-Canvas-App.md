@@ -1,4 +1,4 @@
----
+﻿---
 lab:
     title: 'Build a canvas app for Contoso field technicians'
     description: 'Create and customize a canvas app in Microsoft Power Apps that field technicians use to view and update their assigned Work Orders'
@@ -15,7 +15,7 @@ This exercise should take approximately **60** minutes to complete.
 
 ## Scenario
 
-Contoso field technicians spend their days traveling between customer sites. They need a simple, mobile-friendly app to see which jobs they've been assigned, view the details of each request, and update the status when work is complete � all from their phone.
+Contoso field technicians spend their days traveling between customer sites. They need a simple, mobile-friendly app to see which jobs they've been assigned, view the details of each request, and update the status when work is complete — all from their phone.
 
 You'll build this app connected to the Work Order table you created in Lab 3, with a list screen showing assigned requests and a detail screen where technicians can update status.
 
@@ -92,7 +92,7 @@ Now you'll add a second screen where technicians can view full details and updat
 
 1. By default, the form is positioned at the very top of the screen, which leaves no room for a Back button. In the **Tree view**, select **Form1**, then drag it down to leave space at the top of the screen for a button.
 
-1. A popup appears directly over the form. Select **Fields** � this surfaces a dropdown with AI-suggested fields based on your data source. Remove the ones you don't need and add the missing one:
+1. A popup appears directly over the form. Select **Fields** — this surfaces a dropdown with AI-suggested fields based on your data source. Remove the ones you don't need and add the missing one:
     - **Remove**: `Customer Email`, `Status Reason`, and `Record created on` (select the ellipsis next to each and select **Remove**)
     - **Add**: select **+ Add field**, search for `Assigned Technician`, and select **Add**
 
@@ -108,7 +108,7 @@ Now you'll add Back and Save buttons so technicians can navigate and submit upda
 
 1. When the button is inserted, notice the formula bar at the top of the screen. The property dropdown on the left side already shows **OnSelect** by default.
 
-1. Before using Copilot, clear any existing content from the formula bar � if there's already a formula there, Copilot will append to it rather than replace it.
+1. Before using Copilot, clear any existing content from the formula bar — if there's already a formula there, Copilot will append to it rather than replace it.
 
 1. Select the **Copilot** icon in the formula bar and select **Create a formula (preview)**. This button will navigate back to the previous screen, so type `go back to the previous screen` and press **Enter**. Copilot suggests the formula `Back()`. Select **Apply** to apply it.
 
@@ -140,9 +140,9 @@ Now you'll connect the gallery on the first screen to the detail screen.
 
 1. Now set the **OnSelect** property of **NextArrow**. When a technician taps the arrow on a gallery item, you want the app to navigate to the detail screen for that request with a slide transition. Confirm the property dropdown in the formula bar shows **OnSelect**.
 
-1. Clear any existing content from the formula bar � Copilot appends to whatever is already there.
+1. Clear any existing content from the formula bar — Copilot appends to whatever is already there.
 
-1. Select the **Copilot** icon and choose **Create a formula (preview)**. Describe what you want � for example, type `navigate to the detail screen with a slide transition` and press **Enter**.
+1. Select the **Copilot** icon and choose **Create a formula (preview)**. Describe what you want — for example, type `navigate to the detail screen with a slide transition` and press **Enter**.
 
 1. Review the formula Copilot suggests. It should be:
 
@@ -228,7 +228,7 @@ Now you'll wire the flow to the canvas app and display the AI suggestion on scre
 1. On the detail screen, select **Suggest Priority**. After a few seconds, the label should display a suggested priority based on the issue description.
 
 > [!NOTE]
-> AI Builder prompt actions require an AI Builder capacity allocation in your environment. If the flow fails with a licensing error, check with your administrator or use a trial capacity add-on. Results may vary � the AI suggestion is a starting point, not a definitive answer.
+> AI Builder prompt actions require an AI Builder capacity allocation in your environment. If the flow fails with a licensing error, check with your administrator or use a trial capacity add-on. Results may vary — the AI suggestion is a starting point, not a definitive answer.
 
 1. Change the **Request Status** value and select **Save**.
 

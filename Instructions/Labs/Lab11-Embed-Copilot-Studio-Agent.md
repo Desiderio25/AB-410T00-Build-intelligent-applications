@@ -1,4 +1,4 @@
----
+﻿---
 lab:
     title: 'Build and evaluate a Copilot Studio agent for Contoso service managers'
     description: 'Create a Copilot Studio agent grounded on the Work Order table, add suggested prompts and a custom escalation topic, and use a second agent to compare the AI-generated plan from Lab 2 to the solution you built'
@@ -9,7 +9,7 @@ lab:
 
 # Build and evaluate a Copilot Studio agent for Contoso service managers
 
-In this exercise, you build two Copilot Studio agents. The first is a practical field service assistant grounded on your Work Order data � the kind of agent a real Contoso service manager would use. The second is a learning tool built for you as a student: a Plan Comparison assistant that lets you interrogate the AI-generated plan from Lab 2 and compare it to the solution you actually built across the course.
+In this exercise, you build two Copilot Studio agents. The first is a practical field service assistant grounded on your Work Order data — the kind of agent a real Contoso service manager would use. The second is a learning tool built for you as a student: a Plan Comparison assistant that lets you interrogate the AI-generated plan from Lab 2 and compare it to the solution you actually built across the course.
 
 This exercise should take approximately **45** minutes to complete.
 
@@ -17,7 +17,7 @@ This exercise should take approximately **45** minutes to complete.
 
 Service managers at Contoso Field Services spend significant time manually searching for information: which technician is overloaded, which customers have open Critical requests, and what was the resolution history for a specific account. The Copilot panel you enabled in Lab 7 helps with simple queries, but managers need a more guided, conversational assistant that understands Contoso-specific context.
 
-In this exercise, you build a custom Copilot Studio agent grounded in the Work Order table, configure suggested prompts and a custom escalation topic, and test it against your data. You then build a second agent grounded on the three tables Plan Designer created in Lab 2 � **Account**, **Field Technician**, and **Service Request** � and use it to compare what was planned to what you actually built.
+In this exercise, you build a custom Copilot Studio agent grounded in the Work Order table, configure suggested prompts and a custom escalation topic, and test it against your data. You then build a second agent grounded on the three tables Plan Designer created in Lab 2 — **Account**, **Field Technician**, and **Service Request** — and use it to compare what was planned to what you actually built.
 
 ## Task 1: Open the model-driven app and initiate agent creation
 
@@ -89,7 +89,7 @@ Grounding connects the agent to your Dataverse data so it can answer questions u
 1. Select **Add to agent**. The agent is now grounded on your Work Order data.
 
 > [!NOTE]
-> When grounded on a Dataverse table, the agent can retrieve and summarize records using natural language queries. It respects Dataverse security � it only returns records that the signed-in user has permission to see based on their assigned security role.
+> When grounded on a Dataverse table, the agent can retrieve and summarize records using natural language queries. It respects Dataverse security — it only returns records that the signed-in user has permission to see based on their assigned security role.
 
 ## Task 4: Configure suggested prompts
 
@@ -115,7 +115,7 @@ Suggested prompts appear at the start of a conversation, giving users ready-made
 
 ## Task 5: Create an escalation topic
 
-Topics let your agent respond to specific phrases with a guided, structured response � going beyond open-ended Q&A to deliver a consistent workflow. Unlike knowledge-based answers (which are generative), topics follow a defined path you control. You'll create an escalation topic that walks a service manager through a checklist when they need to escalate a Critical Work Order.
+Topics let your agent respond to specific phrases with a guided, structured response — going beyond open-ended Q&A to deliver a consistent workflow. Unlike knowledge-based answers (which are generative), topics follow a defined path you control. You'll create an escalation topic that walks a service manager through a checklist when they need to escalate a Critical Work Order.
 
 1. In the agent designer, select the **Topics** tab in the top navigation.
 
@@ -130,7 +130,7 @@ Topics let your agent respond to specific phrases with a guided, structured resp
     ```
 
 > [!NOTE]
-> With generative orchestration, you describe the topic's purpose in plain language rather than listing exact phrases. The AI reads this description to decide when to route the conversation to this topic � so a clear, specific description produces more reliable triggering.
+> With generative orchestration, you describe the topic's purpose in plain language rather than listing exact phrases. The AI reads this description to decide when to route the conversation to this topic — so a clear, specific description produces more reliable triggering.
 
 1. Below the trigger node, select **+** to add a node, then select **Send a message**. Enter the following:
 
@@ -159,11 +159,11 @@ Topics let your agent respond to specific phrases with a guided, structured resp
 1. Select **Save** to save the topic.
 
 > [!NOTE]
-> Topics take priority over generative answers. When a user sends a message that matches a trigger phrase, the agent follows the topic's defined path rather than generating a free-form response. This makes topics ideal for high-stakes scenarios � like escalations � where you want consistent, predictable behavior.
+> Topics take priority over generative answers. When a user sends a message that matches a trigger phrase, the agent follows the topic's defined path rather than generating a free-form response. This makes topics ideal for high-stakes scenarios — like escalations — where you want consistent, predictable behavior.
 
 ## Task 6: Test the agent in Copilot Studio
 
-Before evaluating, test the agent to confirm it responds correctly � both to Work Order data questions and to the escalation topic you created.
+Before evaluating, test the agent to confirm it responds correctly — both to Work Order data questions and to the escalation topic you created.
 
 1. In the agent designer, select **Test** (in the top-right area) to open the test chat panel.
 
@@ -182,13 +182,13 @@ Before evaluating, test the agent to confirm it responds correctly � both to W
 
 ## Task 7: Explore the Plan Designer solution
 
-In Lab 2, Plan Designer generated a solution with three tables: **Account**, **Field Technician**, and **Service Request**. Before grounding your comparison agent on them, take a moment to understand what each table represents � and how it relates to what you actually built.
+In Lab 2, Plan Designer generated a solution with three tables: **Account**, **Field Technician**, and **Service Request**. Before grounding your comparison agent on them, take a moment to understand what each table represents — and how it relates to what you actually built.
 
 1. Keep the Copilot Studio tab open. In a new tab, open [**Power Apps**](https://make.powerapps.com) at `https://make.powerapps.com` and navigate to **Solutions**.
 
-1. Locate the solution you created in Lab 2 with Plan Designer and open it. (It may be named something like **Field Service Request Manager** � if you're not sure which one it is, ask your instructor.)
+1. Locate the solution you created in Lab 2 with Plan Designer and open it. (It may be named something like **Field Service Request Manager** — if you're not sure which one it is, ask your instructor.)
 
-1. Select **Objects** and expand **Tables**. The tables listed here are the ones the Data Agent created in Lab 2. Your tables might not match a peer's � that's fine. Take note of the **Display Name** of each table. You'll use those names in Task 8 to ground the comparison agent.
+1. Select **Objects** and expand **Tables**. The tables listed here are the ones the Data Agent created in Lab 2. Your tables might not match a peer's — that's fine. Take note of the **Display Name** of each table. You'll use those names in Task 8 to ground the comparison agent.
 
 ## Task 8: Create a Plan Comparison agent
 
@@ -239,7 +239,7 @@ Now you'll create a second agent, a **Plan Comparison Assistant**, grounded on t
 1. Review the responses and take notes on what the agent returns for each question. You'll use these observations in Task 9.
 
 > [!NOTE]
-> The quality of the agent's responses depends on how much data is in your tables. If the Plan Designer tables are mostly empty, responses will be sparse � which is itself a useful observation about the limits of plan-only data as a knowledge source.
+> The quality of the agent's responses depends on how much data is in your tables. If the Plan Designer tables are mostly empty, responses will be sparse — which is itself a useful observation about the limits of plan-only data as a knowledge source.
 
 ## Task 9: Reflect and share out
 
@@ -247,14 +247,14 @@ The Plan Comparison agent can reason about table schemas and data, but a solutio
 
 1. Open [**Power Apps**](https://make.powerapps.com) at `https://make.powerapps.com` and navigate to **Solutions**. Open the solution you created in Lab 2 with Plan Designer.
 
-1. Select **Objects** and spend 2�3 minutes browsing through the full component list. Look at each category:
+1. Select **Objects** and spend 2—3 minutes browsing through the full component list. Look at each category:
     - **Tables:** compare to what the agent told you about the plan's data model
     - **Cloud flows:** did the plan generate any automation?
     - **Apps:** what app structure did the plan suggest?
     - **Security roles:** did the plan include any roles?
 
 1. Review your notes from the Plan Comparison agent. Use these questions to guide your thinking:
-    - Did your plan create a dedicated technician table? In the course labs, technician assignment was handled as a lookup field on the Work Order rather than a separate entity � did your plan do the same, or something different?
+    - Did your plan create a dedicated technician table? In the course labs, technician assignment was handled as a lookup field on the Work Order rather than a separate entity — did your plan do the same, or something different?
     - Did your Work Order table relate to an Account entity, or did it store customer information as a plain text field? What did the plan do?
     - Compare the columns on your plan's core service request table to the fields on your Work Order table. What concepts overlap? What's missing from one side?
 
@@ -266,7 +266,7 @@ The Plan Comparison agent can reason about table schemas and data, but a solutio
 1. Be prepared to share at least one of your findings with the class. Here are a few discussion points to get you started:
    - *"Did anyone's plan accurately predict the security role structure?"*
    - *"What did the plan get right about the data model?"*
-   - *"What did you build in these labs that surprised you � things the plan never anticipated?"*
+   - *"What did you build in these labs that surprised you — things the plan never anticipated?"*
    - *"If you were starting a real field service project tomorrow, how would you use Plan Designer differently?"*
    - *"What seems easier: creating the model from scratch like we did, or editing components that the Plan Designer created?"*
 

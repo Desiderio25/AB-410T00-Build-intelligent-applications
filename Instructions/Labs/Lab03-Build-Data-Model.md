@@ -1,4 +1,4 @@
----
+﻿---
 lab:
     title: 'Build the Contoso Field Services data model in Dataverse'
     description: 'Create a solution, build the Work Order table with custom columns, and add sample records in Microsoft Dataverse'
@@ -9,7 +9,7 @@ lab:
 
 # Build the Contoso Field Services data model in Dataverse
 
-In this exercise, you create the data model for the Contoso Field Services solution � building the solution, table, and columns that store Work Order data, and adding sample records to test with in later labs.
+In this exercise, you create the data model for the Contoso Field Services solution — building the solution, table, and columns that store Work Order data, and adding sample records to test with in later labs.
 
 This exercise should take approximately **30** minutes to complete.
 
@@ -21,7 +21,7 @@ In this exercise, you create the solution container and build that table. The co
 
 ## Task 1: Create a solution
 
-All components you build in this course � tables, apps, flows, and pages � belong to a single solution. Working inside a solution keeps everything organized, makes it easy to move your work between environments, and is required for some features such as business process flows.
+All components you build in this course — tables, apps, flows, and pages — belong to a single solution. Working inside a solution keeps everything organized, makes it easy to move your work between environments, and is required for some features such as business process flows.
 
 1. Open [**Power Apps**](https://make.powerapps.com) at `https://make.powerapps.com` and sign in with your Microsoft account.
 
@@ -37,7 +37,7 @@ All components you build in this course � tables, apps, flows, and pages � b
     - **Publisher**: Select **Contoso (contoso)**
     - **Version**: `1.0.0.0`
 
-1. The solution opens. All tables, apps, flows, and pages you create in Labs 3�10 will be added here.
+1. The solution opens. All tables, apps, flows, and pages you create in Labs 3—10 will be added here.
 
 ## Task 2: Create the Work Order table
 
@@ -50,9 +50,9 @@ All components you build in this course � tables, apps, flows, and pages � b
 1. Select the table name (it will likely say **Table1**) and rename it to `Work Order`.
 
 > [!NOTE]
-> Pay extra attention to the naming of this table. In Lab 2, the Plans designer likely already created a table called **Service Request** as part of its suggested data model, so we want to make sure this table has a distinct name. Even though that table lives in a different solution, all tables in a Dataverse environment share the same namespace � meaning tables from different solutions are visible across the environment in selectors, connectors, and security roles. Naming this table **Work Order** keeps the two distinct and avoids confusion when you're choosing tables later in the course. Functionally, it serves the same purpose: tracking customer issues and the technicians assigned to resolve them. **Work Order** is also the industry-standard term used in Dynamics 365 Field Service, so it's a realistic name for this scenario. 
+> Pay extra attention to the naming of this table. In Lab 2, the Plans designer likely already created a table called **Service Request** as part of its suggested data model, so we want to make sure this table has a distinct name. Even though that table lives in a different solution, all tables in a Dataverse environment share the same namespace — meaning tables from different solutions are visible across the environment in selectors, connectors, and security roles. Naming this table **Work Order** keeps the two distinct and avoids confusion when you're choosing tables later in the course. Functionally, it serves the same purpose: tracking customer issues and the technicians assigned to resolve them. **Work Order** is also the industry-standard term used in Dynamics 365 Field Service, so it's a realistic name for this scenario. 
 
-    If Plans actually used the term **Work order** for the table it created, let your instructor know�they will walk you through renaming that table.
+    If Plans actually used the term **Work order** for the table it created, let your instructor know—they will walk you through renaming that table.
 
 ## Task 3: Add columns to the Work Order table
 
@@ -71,7 +71,7 @@ Now you add the columns needed to capture the details of each Work Order.
 1. Select **Update** to save the column.
 
 > [!NOTE]
-> You'll notice that **Customer Name** appears on the Work Order table card with a key icon next to it. This means it's the **primary column** � the field Dataverse uses to identify and display a record throughout the system. When other tables or apps reference a Work Order, they display the primary column value as the record's label. Every Dataverse table has exactly one primary column, and it's set when the table is created. In this case, we're using Customer Name as the primary column so that Work Orders are identified by the customer they belong to.
+> You'll notice that **Customer Name** appears on the Work Order table card with a key icon next to it. This means it's the **primary column** — the field Dataverse uses to identify and display a record throughout the system. When other tables or apps reference a Work Order, they display the primary column value as the record's label. Every Dataverse table has exactly one primary column, and it's set when the table is created. In this case, we're using Customer Name as the primary column so that Work Orders are identified by the customer they belong to.
 
 1. Add a second column with the following settings, then select **Save**:
     - **Display name**: `Customer Email`
