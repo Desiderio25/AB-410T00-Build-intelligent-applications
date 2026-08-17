@@ -57,8 +57,8 @@ Now you'll set up the main screen to display a gallery of Work Orders.
 
 1. Resize and reposition the gallery to fill the screen, leaving space for a title bar at the top.
 
-> [!NOTE]
-> Once the gallery is connected to Work Orders, you should see the three sample records you created in Lab 3 (Adatum Corporation, Tailwind Traders, Fabrikam Inc) appear in the gallery. If the gallery is empty, confirm that you selected the correct Work Orders table with the **contoso_** prefix.
+   > **Note:**
+   > Once the gallery is connected to Work Orders, you should see the three sample records you created in Lab 3 (Adatum Corporation, Tailwind Traders, Fabrikam Inc) appear in the gallery. If the gallery is empty, confirm that you selected the correct Work Orders table with the **contoso_** prefix.
 
 1. With the gallery selected, a small popup appears pinned just above the gallery. Select **Layout** in that popup and choose the layout that shows **Title, subtitle, and body**.
 
@@ -71,7 +71,7 @@ Now you'll set up the main screen to display a gallery of Work Orders.
 
 1. Set the label **Text** property to `"My Work Orders"` in the formula bar.
 
-   > [!NOTE]
+   > **Note:**
    > The double quotes are required. Power Apps treats everything in the formula bar as an expression, not plain text. Without quotes, it tries to interpret `My Work Orders` as a formula reference and throws an error. Wrapping the value in double quotes tells Power Apps to treat it as a literal text string.
 
 1. Format the label: set **Fill** (Background color) to dark blue, the **Color** (text color) to white, and increase the **FontSize** to `36`.
@@ -112,8 +112,8 @@ Now you'll add Back and Save buttons so technicians can navigate and submit upda
 
 1. Select the **Copilot** icon in the formula bar and select **Create a formula (preview)**. This button will navigate back to the previous screen, so type `go back to the previous screen` and press **Enter**. Copilot suggests the formula `Back()`. Select **Apply** to apply it.
 
-> [!NOTE]
-> If Copilot isn't available in your environment, or gives you a response you didn't expect, you can type `Back()` directly in the formula bar.
+   > **Note:**
+   > If Copilot isn't available in your environment, or gives you a response you didn't expect, you can type `Back()` directly in the formula bar.
 
 1. Now set the button label: select the property dropdown and choose **Text**. Type `"Back"` in the formula bar.
 
@@ -180,8 +180,8 @@ Now you'll build a Power Automate flow that uses an AI Builder prompt to analyze
 
 1. Add a new step: Select **+ New step**, search for **AI Builder**, and select **Run a prompt**.
 
-> [!NOTE]
-> You may be prompted to authenticate or sign in to AI Builder at this point. Follow the on-screen steps to connect, then continue.
+   > **Note:**
+   > You may be prompted to authenticate or sign in to AI Builder at this point. Follow the on-screen steps to connect, then continue.
 
 1. Configure the **Run a prompt** step with the following values:
     - **Prompt**: select **AI Classify** from the dropdown
@@ -229,8 +229,8 @@ Now you'll wire the flow to the canvas app and display the AI suggestion on scre
 
 1. On the detail screen, select **Suggest Priority**. After a few seconds, the label should display a suggested priority based on the issue description.
 
-> [!NOTE]
-> AI Builder prompt actions require an AI Builder capacity allocation in your environment. If the flow fails with a licensing error, check with your administrator or use a trial capacity add-on. Results may vary — the AI suggestion is a starting point, not a definitive answer.
+   > **Note:**
+   > AI Builder prompt actions require an AI Builder capacity allocation in your environment. If the flow fails with a licensing error, check with your administrator or use a trial capacity add-on. Results may vary — the AI suggestion is a starting point, not a definitive answer.
 
 1. If needed, update the Priority value to match the suggestion, and then select **Save**.
 
@@ -244,5 +244,5 @@ Now you'll wire the flow to the canvas app and display the AI suggestion on scre
 
 1. Select **Publish** and then **Publish updates** to make the app available to users.
 
-> [!NOTE]
+> **Note:**
 > Sharing the app with specific users and assigning security roles is covered in a separate module. For now, the app is published and accessible in your environment.
