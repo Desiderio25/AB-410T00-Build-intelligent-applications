@@ -12,4 +12,5 @@ plugins:
   - jekyll-mentions
   - jemoji
 markdown: GFM
+encoding: utf-8
 title: Lab Exercises

@@ -78,7 +78,7 @@ Not all new Work Orders will have a technician assigned yet — some will be una
     - **Table name**: Users
     - **Row ID**: Type `/` and select **Insert dynamic content**. Search for and select **Assigned Technician (Value)**.
 
-> [!NOTE]
+> **Note:**
 > This action retrieves the full User record for the assigned technician so you can access their email address in the next step.
 
 1. Select the plus sign below the **Get a row by ID** action to add another action.
@@ -130,14 +130,14 @@ Not all new Work Orders will have a technician assigned yet — some will be una
 
 1. Select **Save** to save the record.
 
-> [!NOTE]
+> **Note:**
 >  Create the test record through the model-driven app rather than directly in the table editor. The app form ensures the lookup field value is properly committed when the record is saved, so the flow trigger receives a valid Assigned Technician ID. Creating a record directly in the table editor can result in the lookup value not being passed to the trigger correctly.
 
 1. Return to Power Automate and check the test results. The flow should have triggered and show a successful run.
 
 1. Open a new browser tab and go to [**Outlook**](https://outlook.office.com) at `https://outlook.office.com`. Sign in with your MOD Administrator email address provided by your Authorized Lab Host and check your inbox for the notification email.
 
-> [!NOTE]
+> **Note:**
 > If the flow run shows an error, select the failed step to see the error details. Common issues include connection problems (you may need to sign in to the Outlook connector) or dynamic content mapping errors.
 
 ## Task 6: Review the flow run history
@@ -148,5 +148,5 @@ Not all new Work Orders will have a technician assigned yet — some will be una
 
 1. Select the run to see a detailed view of each step, the inputs, and the outputs.
 
-> [!NOTE]
+> **Note:**
 > The run history is your primary debugging tool in Power Automate. Each step shows exactly what data it received and what it returned, making it straightforward to identify where a flow went wrong.
