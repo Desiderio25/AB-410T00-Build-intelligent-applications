@@ -144,7 +144,7 @@ Charts give managers a visual snapshot of data without any code. You'll create a
 
 1. Select **Charts**, then select **+ New chart**. The chart designer opens.
 
-> [!NOTE] 
+> **Note:**
 > The chart designer opens in the classic Unified Interface layout, which looks different from the modern app designer you've been using. This is expected.
 
 1. Name the chart `Requests by Priority`.
@@ -169,7 +169,7 @@ Dashboards let managers see their most important data at a glance in a single pa
 
 1. Select **+ New** > **Dashboard** > **2-Column overview** from the command bar.
 
-> [!NOTE]
+> **Note:**
 > The dashboard designer opens in the classic Unified Interface layout, which looks different from the modern app designer you've been using. This is expected.
 
    This is a standard dashboard layout that supports List and Chart components.
@@ -195,7 +195,7 @@ Dashboards let managers see their most important data at a glance in a single pa
 
 1. Find and select **Service Manager Dashboard**, then select **Add**.
 
-> [!NOTE]
+> **Note:**
 > If **Service Manager Dashboard** doesn't appear in the list, close the app designer tab and reopen the app from the solution. The modern app designer sometimes caches the available components and needs a full reload to pick up dashboards published from the classic designer.
 
 1. In the **Pages** pane, select the ellipses on **Service Manager Dashboard**, then select **Move up**. The dashboard will now be the first item users see when they open the app.

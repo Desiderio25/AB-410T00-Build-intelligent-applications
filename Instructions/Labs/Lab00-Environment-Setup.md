@@ -42,7 +42,7 @@ Every table, app, flow, and automation you build will be part of this single sol
 
 You will be provided with a **Microsoft 365 license** by your Authorized Lab Host (ALH). This gives you a work email address in the format `username@domain.onmicrosoft.com`. You will use this account as your identity for all Power Platform services throughout the course.
 
-> [!NOTE]
+> **Note:**
 > Do not use a personal Microsoft account for these labs. The Microsoft 365 account provided by your ALH includes the organizational permissions required to create Dataverse environments and access Power Platform features.
 
 ## Task 1: Sign in to Power Apps and start your trial
@@ -61,7 +61,7 @@ You will be provided with a **Microsoft 365 license** by your Authorized Lab Hos
 
 1. Confirm that the environment picker in the top-right corner now shows **Dev One**. This is the environment you will use throughout all labs in this course.
 
-> [!NOTE]
+> **Note:**
 > Dev One includes Microsoft Dataverse, which is required for all labs in this course. If you don't see Dev One in the environment list, let your instructor know.
 
 ## Task 2: Verify your Power Automate access
@@ -74,7 +74,7 @@ You will be provided with a **Microsoft 365 license** by your Authorized Lab Hos
 
 1. In the left navigation, select **+ Create**. Confirm you can see **Automated cloud flow** as an option.
 
-> [!NOTE]
+> **Note:**
 > Labs 8 and 9 use the Dataverse connector in Power Automate, which is a premium connector. Your Power Apps trial includes premium Power Automate capabilities. If you see a message about upgrading your plan when building flows, let your instructor know.
 
 ## Task 3: Start your Power Pages trial
@@ -89,7 +89,7 @@ Power Pages is a separate product from Power Apps and requires its own trial act
 
 1. Confirm that the Power Pages home screen loads and shows the option to create a new site.
 
-> [!NOTE]
+> **Note:**
 > You don't need to create a site now — just confirm that your trial is active. You'll build the Contoso customer portal in Lab 7.
 
 ## Task 4: Verify AI Builder access
@@ -104,7 +104,7 @@ AI Builder is used in Lab 10 to create a grounded prompt that queries Contoso's 
 
 1. If you see a message about AI Builder credits or a prompt to start a trial, select **Try AI Builder** or **Start trial** to activate your AI Builder credits.
 
-> [!NOTE]
+> **Note:**
 > AI Builder credits are consumed each time a prompt is run or a model is used. Use the **Test** feature thoughtfully during Lab 10 to avoid depleting your trial credits before completing the exercise.
 
 ## You're ready
