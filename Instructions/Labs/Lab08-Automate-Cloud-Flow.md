@@ -88,7 +88,7 @@ Not all new Work Orders will have a technician assigned yet — some will be una
 1. When prompted, select **Sign in** and sign in with your Administrator email address provided by your Authorized Lab Host. If prompted, accept the permissions. If the sign-in window doesn't appear, check that your pop-up blocker is turned off.
 
 1. Configure the email:
-    - **To**: Select the gear icon above the field and select **Use dynamic content**. Then start typing `/` and select **Insert dynamic content.** Search for and select **Primary Email** (from the **Get a row by ID 1** action).
+    - **To**: Select the gear icon above the field and select **Use dynamic content**. Then start typing `/` and select **Insert dynamic content.** Search for and select **Primary Email** from the **Get a row by ID 1** action.
 
     - **Subject**: Type `New Work Order Assigned: `, then type `/` and select **Insert dynamic content**. Search for and select **Customer Name** from the **Get a row by ID** action.
 
