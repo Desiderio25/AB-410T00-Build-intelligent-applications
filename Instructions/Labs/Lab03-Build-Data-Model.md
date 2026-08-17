@@ -52,7 +52,7 @@ All components you build in this course — tables, apps, flows, and pages — b
 > [!NOTE]
 > Pay extra attention to the naming of this table. In Lab 2, the Plans designer likely already created a table called **Service Request** as part of its suggested data model, so we want to make sure this table has a distinct name. Even though that table lives in a different solution, all tables in a Dataverse environment share the same namespace — meaning tables from different solutions are visible across the environment in selectors, connectors, and security roles. Naming this table **Work Order** keeps the two distinct and avoids confusion when you're choosing tables later in the course. Functionally, it serves the same purpose: tracking customer issues and the technicians assigned to resolve them. **Work Order** is also the industry-standard term used in Dynamics 365 Field Service, so it's a realistic name for this scenario. 
 
-    If Plans actually used the term **Work order** for the table it created, let your instructor know—they will walk you through renaming that table.
+   If Plans actually used the term **Work order** for the table it created, let your instructor know—they will walk you through renaming that table.
 
 ## Task 3: Add columns to the Work Order table
 
@@ -125,26 +125,26 @@ You'll need some data in the Work Order table to test the canvas app you build i
 
 1. In the left navigation, select **Solutions**, then open the **Contoso Field Services** solution.
 
-1. Select **Tables**, then select the **Work Order** table.
+1. Select **Objects** > **Tables**, then select the **Work Order** table.
 
 1. Select **Edit** to open the table data editor.
 
-> [!TIP] 
+   > [!TIP] 
    >The data editor may not show all columns by default. If a column such as **Request Status** or **Priority** is missing, select the **+ (number) more** button at the right end of the column headers to add it to the view.
 
-1. Select **+ New row** and enter the following values:
+1. Select **+ New row** > **+ New row** and enter the following values:
     - **Customer Name**: `Adatum Corporation`
     - **Issue Description**: `Air conditioning unit is making loud noise and not cooling properly`
     - **Priority**: `High`
     - **Request Status**: `New`
 
-1. Select **+ New row** and enter the following values:
+1. Select **+ New row** > **+ New row** and enter the following values:
     - **Customer Name**: `Tailwind Traders`
     - **Issue Description**: `Elevator panel buttons are unresponsive on floors 3 and 4`
     - **Priority**: `Critical`
     - **Request Status**: `Assigned`
 
-1. Select **+ New row** and enter the following values:
+1. Select **+ New row** > **+ New row** and enter the following values:
     - **Customer Name**: `Fabrikam Inc`
     - **Issue Description**: `Exterior lighting not turning on at dusk`
     - **Priority**: `Normal`
