@@ -152,7 +152,7 @@ Charts give managers a visual snapshot of data without any code. You'll create a
 1. Select **Pie chart** as the chart type.
 
 1. Configure the chart data:
-    - **Legend Entries (Series)**: Set to **Work Order** and **Count:All**. This counts the number of records in each group.
+    - **Legend Entries (Series)**: Set to **Customer Name** and **Count:All**. This counts the number of records in each group.
     - **Horizontal (Category) Axis Labels**: Set to **Priority**. This groups the records by their Priority value.
 
 1. In the **Description** field, enter `Pie chart showing the distribution of Work Orders by priority level`.
